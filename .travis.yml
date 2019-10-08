@@ -1,3 +1,4 @@
+curl --data-binary @codecov.yml https://codecov.io/validate
 language: java
 jdk: oraclejdk11
 
