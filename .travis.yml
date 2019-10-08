@@ -3,12 +3,9 @@ jdk: oraclejdk11
 
 script: mvn -e verify
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-
 notifications:
   email:
     recipients:
       - renatf87@gmail.com
-      on_failure: always
-      on_success: change
+    on_failure: always
+    on_success: change
